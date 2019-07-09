@@ -1,130 +1,244 @@
-body{
-    background: #f3f3f3;
+.index{
+    padding-bottom: 0.98rem;
 }
-.notice{
-    height: 0.69rem;
-    line-height: 0.69rem;
-    border-bottom: 1px dashed #dcdcdc;
-    font-size: 0.24rem;
-    font-weight: bold;
+.banner{
+    position: relative;
+}
+.banner .search_box{
+    z-index: 1;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.8rem;
+    width: 5.9rem;
+    height: 0.65rem;
+    line-height: 0.65rem;
     background: #fff;
+    border-radius: 0.32rem;
 }
-.notice img{
-    margin: 0.21rem 0.26rem 0 0.3rem;
-    width: 0.67rem;
-    height: 0.29rem;
-}
-.screen_box{
-    margin-bottom: 0.3rem;
-    height: 0.9rem;
-    box-shadow: 0 5px 10px #daeafd;
-    background: #fff;
-}
-.screen_box .search_box{
-    margin-left: 0.3rem;
-    margin-top: 0.15rem;
-    background: #e4e4e6;
-    height: 0.6rem;
-    width: 4.64rem;
-    border-radius: 0.3rem;
-    font-size: 0.28rem;
-}
-.screen_box .search_box input{
-    width: 3.39rem;
-    padding-left: 0.5rem;
-    line-height: 0.6rem;
-}
-.screen_box .search_box .btn{
-    width: 0.75rem;
-    height: 100%;
-    background: #fd455d;
-    border-bottom-right-radius: 0.3rem;
-    border-top-right-radius: 0.3rem;
-}
-.screen_box .search_box .btn img{
-    margin-top: 0.16rem;
-    margin-left: 0.19rem;
-    width: 0.36rem;
-    height: 0.34rem;
-}
-.screen_box .screen{
-    width: 1.48rem;
-    height: 100%;
-    line-height: 0.9rem;
-    text-align: center;
-}
-.screen_box .screen img{
+.banner .search_box img{
     display: inline-block;
-    width: 0.14rem;
-    height: 0.07rem;
+    margin: 0 0.18rem 0 0.2rem;
+    width: 0.26rem;
+    height: 0.26rem;
     vertical-align: middle;
 }
-.screen_box .shop_car{
-    width: 1.07rem;
-    height: 100%;
-    box-shadow: -2px 3px 9px #daeafd;;
+.banner .search_box input{
+    line-height: 0.65rem;
+    width: 4.9rem;
+    font-size: 0.28rem;
+    font-weight: bold;
 }
-.screen_box .shop_car img{
-    margin-top: 0.23rem;
-    margin-left: 0.3rem;
-    width: 0.48rem;
-    height: 0.44rem;
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: #25c642;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0.32rem 0 0.13rem;
+}
+.nav li{
+    margin-bottom: 0.32rem;
+    text-align: center;
+    font-size: 0.28rem;
+    font-weight: bold;
+    width: 25%;
+    line-height: 0.33rem;
+}
+.nav li img{
+    margin: 0 auto 0.17rem;
+    width: 1.06rem;
+    height: 1.06rem;
+}
+.hot_column{
+    border-radius: 0.3rem;
+    background: linear-gradient(to bottom, #ffbfc3 0%,#fbf4f6 100%);;
+}
+.hot_column .top{
+    padding: 0 0.3rem;
+    width: 6.9rem;
+    height: 1.18rem;
+    line-height: 1.18rem;
+}
+.hot_column .top .title{
+    display: inline-block;
+    font-size: 0.36rem;
+    font-weight: 900;
+}
+.hot_column .top .hot_img{
+    display: inline-block;
+    width: 0.33rem;
+    height: 0.38rem;
+    vertical-align: sub;
+}
+.hot_column .top .countdown{
+    margin-top: 0.42rem;
+    padding: 0 0.18rem;
+    height: 0.37rem;
+    line-height: 0.37rem;
+    border-radius: 0.18rem;
+    background: #fff;
+    font-size: 0.24rem;
+    font-weight: bold;
+}
+.hot_column .shop_list{
+    padding: 0 0 0.3rem 0.3rem;
+    white-space: nowrap;
+    width: 7.2rem;
+    overflow: auto;
+}
+.hot_column .shop_list li{
+    margin-right: 0.1rem;
+    display: inline-block;
+    width: 2.12rem;
+    height: 3.66rem;
+    border-radius: 0.14rem;
+    overflow: hidden;
+    background: #fff;
+}
+.hot_column .shop_list li .shop_img{
+    margin-bottom: 0.2rem;
+    width: 100%;
+    height: auto;
+}
+.hot_column .shop_list li .name{
+    margin-left: 0.14rem;
+    font-size: 0.26rem;
+    color: #333;
+}
+.hot_column .shop_list li .price{
+    margin-left: 0.14rem;
+    font-size: 0.32rem;
+    color: #ff0606;
+    font-weight: bold;
+}
+.hot_column .shop_list li .old_price{
+    margin-left: 0.14rem;
+    color: #999999;
+    font-weight: bold;
+    text-decoration: line-through;
+    font-size: 0.2rem;
+}
+.hot_column .shop_list li .bottom{
+    padding-right: 0.1rem;
+}
+.num_box{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    border-radius: 0.15rem;
+    border: 1px solid #33ca4e;
+    color: #33ca4e;
+    text-align: center;
+    font-size: 0;
+}
+.num_box span{
+    display: inline-block;
+    width: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.32rem;
+}
+.num_box input{
+    width: 0.44rem;
+    height: 100%;
+    font-size: 0.24rem;
+    vertical-align: top;
+    text-align: center;
+}
+.num_box .minus,.num_box .num{
+    display: none;
+}
+.num_box.isAdd .minus,.num_box.isAdd .num{
+    display: inline-block;
+}
+.hot_column .num_box input{
+    width: 0.3rem;
+    height: 100%;
+    font-size: 0.24rem;
+    vertical-align: top;
+}
+.ad{
+   padding: 0.2rem 0.3rem 0;
+}
+.ad img{
+    width: 100%;
+    height: auto;
+}
+.hot_title{
+    padding: 0.38rem 0.3rem 0.5rem;
+    font-size: 0.36rem;
+    font-weight: 900;
+}
+.hot_shop_list{
+    padding: 0 0.3rem;
+}
+.hot_shop_list li{
+    padding: 0.02rem 0 0;
+    border-bottom: 1px solid #ececec;
+}
+.hot_shop_list li .left{
+    width: 1.64rem;
+    height: 1.64rem;
+}
+.hot_shop_list li .right{
+    margin-left: 1.82rem;
+}
+.hot_shop_list li .name{
+    padding: 0.2rem 0 0.14rem;
+    font-size: 0.32rem;
+    font-weight: 900;
+}
+.hot_shop_list li .pay_num{
+    display: inline-block;
+    padding: 0 0.2rem;
+    height: 0.33rem;
+    line-height: 0.33rem;
+    font-size: 0.2rem;
+    color: #e79191;
+    border: 1px solid #e79191;
+    background: #fdf8f4;
+    border-radius: 1.6rem;
+}
+.hot_shop_list li .specs{
+    padding: 0.13rem 0;
+    font-size: 0.28rem;
+    color: #999;
+}
+.hot_shop_list li .bottom{
+    margin-bottom: 0.2rem;
+}
+.hot_shop_list li .price{
+    font-size: 0.32rem;
+    font-weight: 900;
+    color: #ff0606;
 }
 
-.shop_list li{
-    display: inline-block;
-    margin-bottom: 0.1rem;
-    width: 3.7rem;
-    background: #fff;
-}
-.shop_list li .content{
-    padding: 0 0.25rem 0 0.44rem;
-}
-.shop_list li .content .name{
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 0.28rem;
-    font-weight: bold;
-}
-.shop_list li .content .new_price{
-    font-size: 0.24rem;
-    font-weight: bold;
-    color: #e4373b;
-}
-.shop_list li .content .new_price span{
-    font-size: 0.34rem;
-}
-.shop_list li .content .old_price{
-    font-size: 0.24rem;
-    font-weight: bold;
-    color: #999999;
-}
-.shop_list li .content .car{
-    margin-top: 0.27rem;
-    width: 0.38rem;
-    height: 0.35rem;
-}
-.screen_mask{
-    display: none;
+/*广告弹出*/
+.ad_mask{
+    z-index: 2;
     position: fixed;
     top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.6);
     width: 100%;
-    z-index: 1;
-    height: 1rem;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
 }
-.screen_mask ul{
-    background: #fff;
-    font-size: 0.28rem;
-    font-weight: bold;
-    line-height: 0.9rem;
-    height: 0.9rem;
-    white-space: nowrap;
-    overflow-x: auto;
+.ad_mask .content{
+    position: absolute;
+    top: 3.2rem;
+    left: 1rem;
+    width: 5.5rem;
 }
-.screen_mask ul li{
-    padding: 0 0.3rem;
-    display: inline-block;
+.ad_mask .content .ad_close{
+    position: absolute;
+    top: 0;
+    right: 0.4rem;
+    width: 0.55rem;
+    height: auto;
+}
+.ad_mask .content .ad_img{
+    margin-top: 0.45rem;
 }
 
