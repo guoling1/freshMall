@@ -65,3 +65,34 @@
 .container{
     padding: 0.88rem 0 0;
 }
+
+/*加减框*/
+.num_box{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    border-radius: 0.15rem;
+    border: 1px solid #33ca4e;
+    color: #33ca4e;
+    text-align: center;
+    font-size: 0;
+}
+.num_box span{
+    display: inline-block;
+    width: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.32rem;
+}
+.num_box input{
+    width: 0.44rem;
+    height: 100%;
+    font-size: 0.24rem;
+    vertical-align: top;
+    text-align: center;
+}
+.num_box .minus,.num_box .num{
+    display: none;
+}
+.num_box.isAdd .minus,.num_box.isAdd .num{
+    display: inline-block;
+    line-height: 0.3rem;
+}

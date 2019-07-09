@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-<div class="classify">
+<div class="classify_main">
     <div class="head">
         <input type="text" placeholder="搜索菜品名称" disabled>
     </div>
@@ -20,17 +20,192 @@
             <li class="active"><p>时令水果</p></li>
             <li><p>肉禽类</p></li>
             <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食</p></li>
+            <li><p>方便速食11</p></li>
         </ul>
         <div class="right">
-            <div v-for="item in childrenList">
-                <div class="title">{{item.name}}</div>
-                <ul>
-                    <li v-for="itm in item.children" @click="toList(itm.cat_id)">
-                        <img :src="itm.image" alt="">
-                        <p>{{item.name}}</p>
-                    </li>
-                </ul>
+            <div class="classify">
+                <div class="show">
+                    <div class="show_name">
+                        <span class="active">推荐<i></i></span>
+                        <span>熟食类<i></i></span>
+                        <span>香肠火腿<i></i></span>
+                        <span>肉类料包<i></i></span>
+                    </div>
+                    <div class="open">
+                        <img src="images/zhankai.png" alt="">
+                    </div>
+                </div>
+                <div class="hide">
+                    <ul class="main">
+                        <li>推荐</li>
+                        <li>熟食类</li>
+                        <li class="active">香肠火腿</li>
+                        <li>禽类料包</li>
+                        <li>肉类料包</li>
+                        <li>其他料包</li>
+                    </ul>
+                </div>
             </div>
+            <div class="sort">
+                <span>销量</span>
+                <span class="price active">价格</span>
+            </div>
+            <ul class="shop_list">
+                <li class="clear">
+                    <div class="left fl">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="name">西班牙进口</p>
+                        <p class="specs">250g/袋</p>
+                        <div class="bottom">
+                            <span class="price">￥19.80</span>
+                            <span class="old_price">￥19.80</span>
+                            <div class="num_box fr ">
+                                <span class="minus">-</span>
+                                <input type="number" class="num">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear">
+                    <div class="left fl">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="name">西班牙进口</p>
+                        <p class="specs">250g/袋</p>
+                        <div class="bottom">
+                            <span class="price">￥19.80</span>
+                            <span class="old_price">￥19.80</span>
+                            <div class="num_box fr isAdd">
+                                <span class="minus">-</span>
+                                <input type="number" class="num" value="1">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear">
+                    <div class="left fl">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="name">西班牙进口</p>
+                        <p class="specs">250g/袋</p>
+                        <div class="bottom">
+                            <span class="price">￥19.80</span>
+                            <span class="old_price">￥19.80</span>
+                            <div class="num_box fr isAdd">
+                                <span class="minus">-</span>
+                                <input type="number" class="num" value="1">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear">
+                    <div class="left fl">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="name">西班牙进口</p>
+                        <p class="specs">250g/袋</p>
+                        <div class="bottom">
+                            <span class="price">￥19.80</span>
+                            <span class="old_price">￥19.80</span>
+                            <div class="num_box fr isAdd">
+                                <span class="minus">-</span>
+                                <input type="number" class="num" value="1">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear">
+                    <div class="left fl">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="name">西班牙进口</p>
+                        <p class="specs">250g/袋</p>
+                        <div class="bottom">
+                            <span class="price">￥19.80</span>
+                            <span class="old_price">￥19.80</span>
+                            <div class="num_box fr isAdd">
+                                <span class="minus">-</span>
+                                <input type="number" class="num" value="1">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear">
+                    <div class="left fl">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="name">西班牙进口</p>
+                        <p class="specs">250g/袋</p>
+                        <div class="bottom">
+                            <span class="price">￥19.80</span>
+                            <span class="old_price">￥19.80</span>
+                            <div class="num_box fr isAdd">
+                                <span class="minus">-</span>
+                                <input type="number" class="num" value="1">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear">
+                    <div class="left fl">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="name">西班牙进口</p>
+                        <p class="specs">250g/袋</p>
+                        <div class="bottom">
+                            <span class="price">￥19.80</span>
+                            <span class="old_price">￥19.80</span>
+                            <div class="num_box fr isAdd">
+                                <span class="minus">-</span>
+                                <input type="number" class="num" value="1">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear">
+                    <div class="left fl">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="name">西班牙进口</p>
+                        <p class="specs">250g/袋</p>
+                        <div class="bottom">
+                            <span class="price">￥19.80</span>
+                            <span class="old_price">￥19.80</span>
+                            <div class="num_box fr isAdd">
+                                <span class="minus">-</span>
+                                <input type="number" class="num" value="1">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
         </div>
     </div>
 </div>
@@ -69,72 +244,25 @@
 
 <script src="js/rem.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/swiper-4.3.3.min.js"></script>
 <script>
+    // 中间主内容高度
+    $('.content').height($('body').height() - $('.head').height() - $('.footer').height());
+    $('.fix-left').height($('.content').height())
+    // 隐藏的分类高度
+    $('.hide').height($('.content').height() - $('.classify').height());
+    //商品列表高度
+    $('.shop_list').height($('.fix-left').height() - $('.classify').height()-$('.sort').height());
 
-    var mySwiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
+    // 展开隐藏的分类
+    $('.show .open').click(function () {
+        $('.hide').show()
     })
-
-    /**
-     * 倒计时
-     * @param endTime 结束时间
-     */
-    function show_time(endTime) {
-        var time_start = new Date(); //设定当前时间
-        var e_time = endTime.replace(/-/g,"/");
-        var time_end = new Date(e_time).getTime(); //设定目标时间
-
-        // 计算时间差
-        var time_distance = time_end - time_start;
-
-        // 天
-        var int_day = Math.floor(time_distance / 86400000)
-        time_distance -= int_day * 86400000;
-
-        // 时
-        var int_hour = Math.floor(time_distance / 3600000)
-        time_distance -= int_hour * 3600000;
-
-        // 分
-        var int_minute = Math.floor(time_distance / 60000);
-        time_distance -= int_minute * 60000;
-
-        // 秒
-        var int_second = Math.floor(time_distance / 1000);
-
-        // 时分秒为单数时、前面加零
-        if (int_day < 10) {
-            int_day = "0" + int_day;
-        }
-
-        if (int_hour < 10) {
-            int_hour = "0" + int_hour;
-        }
-
-        if (int_minute < 10) {
-            int_minute = "0" + int_minute;
-        }
-
-        if (int_second < 10) {
-            int_second = "0" + int_second;
-        }
-
-
-        // 显示时间
-        $("#countdown").html(int_day + '天' + int_hour + ':' + int_minute + ':' + int_second);
-
-        // 设置定时器
-        setTimeout("show_time('"+e_time+"')", 1000);
-    }
-    show_time('2020-07-09 12:00:00')
+    //选择分类
+    $('.hide .main li').click(function () {
+        $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+        $('.hide').hide()
+    })
 
     //加
     $('.bottom .add').each(function (index, e) {
@@ -166,12 +294,6 @@
                 $(this).parent().removeClass('isAdd')
             }
         })
-    })
-
-
-    $('.ad_close').click(function () {
-            $('.ad_mask').hide()
-
     })
 
 </script>

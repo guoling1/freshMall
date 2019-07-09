@@ -6,174 +6,73 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
     <link rel="stylesheet" href="css/public.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shopCar.css">
 </head>
 <body>
-
-<div class="index">
-    <div class="banner">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/banner.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/banner.png" alt=""></div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <div class="search_box">
-            <img src="images/search.png" alt="">
-            <input type="text" placeholder="搜索菜品名称">
-        </div>
+<div class="header">
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="images/back.png" alt="">
+    </a>
+    <div class="title">购物车</div>
+    <div class="right">
+        编辑
     </div>
-    <ul class="nav">
-        <li>
-            <img src="images/nav1.png" alt="">
-            <p>新鲜蔬菜</p>
-        </li>
-        <li>
-            <img src="images/nav3.png" alt="">
-            <p>米面粮油</p>
-        </li>
-        <li>
-            <img src="images/nav4.png" alt="">
-            <p>调料干货</p>
-        </li>
-        <li>
-            <img src="images/nav2.png" alt="">
-            <p>餐厅用品</p>
-        </li>
-        <li>
-            <img src="images/nav5.png" alt="">
-            <p>肉禽</p>
-        </li>
-        <li>
-            <img src="images/nav6.png" alt="">
-            <p>方便速食</p>
-        </li>
-        <li>
-            <img src="images/nav7.png" alt="">
-            <p>水产海鲜</p>
-        </li>
-        <li>
-            <img src="images/nav8.png" alt="">
-            <p>蛋品豆面</p>
-        </li>
-    </ul>
-    <div class="hot_column">
-        <div class="top">
-            <div class="title">新手专享</div>
-            <img class="hot_img" src="images/hot.png" alt="">
-            <div class="countdown fr">
-                <span>倒计时</span>
-                <span id="countdown">18天16:32:40</span>
-            </div>
-        </div>
-        <ul class="shop_list">
-            <li>
-                <img class="shop_img" src="images/shop.png" alt="">
-                <p class="name">莴笋 约800</p>
-                <p class="price">￥5.69</p>
-                <div class="bottom">
-                    <span class="old_price">￥5.69</span>
-                    <div class="num_box fr isAdd">
-                        <span class="minus">-</span>
-                        <input type="number" class="num" value="1">
-                        <span class="add">+</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img class="shop_img" src="images/shop.png" alt="">
-                <p class="name">莴笋 约800</p>
-                <p class="price">￥5.69</p>
-                <div class="bottom">
-                    <span class="old_price">￥65.69</span>
-                    <div class="num_box fr">
-                        <span class="minus">-</span>
-                        <input type="number" class="num">
-                        <span class="add">+</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img class="shop_img" src="images/shop.png" alt="">
-                <p class="name">莴笋 约800</p>
-                <p class="price">￥5.69</p>
-                <div class="bottom">
-                    <span class="old_price">￥35.69</span>
-                    <div class="num_box fr">
-                        <span class="minus">-</span>
-                        <input type="number" class="num">
-                        <span class="add">+</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img class="shop_img" src="images/shop.png" alt="">
-                <p class="name">莴笋 约800</p>
-                <p class="price">￥5.69</p>
-                <div class="bottom">
-                    <span class="old_price">￥35.69</span>
-                    <div class="num_box fr">
-                        <span class="minus">-</span>
-                        <input type="number" class="num">
-                        <span class="add">+</span>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="ad">
-        <img src="images/ad.png" alt="">
-    </div>
-    <div class="hot_title">热销产品</div>
-    <ul class="hot_shop_list">
-        <li class="clear">
-            <div class="left fl">
-                <img src="images/shop.png" alt="">
-            </div>
-            <div class="right">
-                <p class="name">西班牙进口公鸡牌意大利面螺丝形</p>
-                <p class="pay_num">17.8w+人购买</p>
-                <p class="specs">250g/袋</p>
-                <div class="bottom">
-                    <span class="price">￥19.80</span>
-                    <div class="num_box fr isAdd">
-                        <span class="minus">-</span>
-                        <input type="number" class="num" value="1">
-                        <span class="add">+</span>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="clear">
-            <div class="left fl">
-                <img src="images/shop.png" alt="">
-            </div>
-            <div class="right">
-                <p class="name">西班牙进口公鸡牌意大利面螺丝形</p>
-                <p class="pay_num">17.8w+人购买</p>
-                <p class="specs">250g/袋</p>
-                <div class="bottom">
-                    <span class="price">￥19.80</span>
-                    <div class="num_box fr isAdd">
-                        <span class="minus">-</span>
-                        <input type="number" class="num" value="1">
-                        <span class="add">+</span>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
-
 </div>
-
-<div class="ad_mask">
-    <div class="content">
-        <img class="ad_close" src="images/close.png" alt="">
-        <img class="ad_img" src="images/ad1.png" alt="">
+<div class="container">
+    <div class="tip">
+        <span>满99.00元包邮，享超值优惠</span>
+        <span class="fr">去凑单</span>
     </div>
+        <ul>
+            <img v-if="shopList.length==0" src="../image/empty.png" alt="" style="display:block;width:30%;margin:2rem auto 0;">
+            <li v-for="(item,index) in shopList">
+                <label><input type="checkbox" @change="selectShop(index,item.product_id)" id="private" checked="checked" class="pp" v-model="item.is_check==1"><span></span>fk</label>
+                <img :src="item.image_default" >
+                <div class="right">
+                    <p class="name">{{item.name}}</p>
+                    <p>{{item.specs}}</p>
+                    <p v-if="item.type_id==68"><span v-if="item.right_eye_photometry">右眼光度：{{item.right_eye_photometry}}</span> <span v-if="item.left_eye_photometry">左眼光度：{{item.left_eye_photometry}}</span></p>
+                    <p @click="selectOpt(item.goods_id,item.id)" v-if="(item.type_id=='66'||item.type_id=='69')&&!item.refractionData" style="color:#ff4400;">选择验光单</p>
+                    <div v-if="(item.type_id=='66'||item.type_id=='69')&&item.refractionData" @click="selectOpt(item.goods_id,item.id)">
+                        <!-- 框架眼镜验光单信息-->
+                        <p class="opto"><span>右眼</span><span>光度：{{item.refractionData.right_luminosity}}</span><span>散光：{{item.refractionData.right_astigmatism}}</span><span>轴位：{{item.refractionData.right_axial_position}}</span></p>
+                        <p class="opto"><span>左眼</span><span>光度：{{item.refractionData.left_luminosity}}</span><span>散光：{{item.refractionData.left_astigmatism}}</span><span>轴位：{{item.refractionData.left_axial_position}}</span></p>
+                    </div>
+                    <div class="rbottom">
+                        <span class="price">￥{{item.price}} <s>{{item.mktprice}}</s></span>
+                        <div class="btngroup">
+                            <span id="minus" class="minus" @click="minus(index,item.id,item.product_id)">-</span>
+                            <input type="number" id="coursenum" class="coursenum" @blur="inpBlur(index,item.id,item.product_id)" v-model="item.num">
+                            <span id="add" class="add" @click="plus(index,item.id,item.product_id)">+</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- <li >
+              <label><input type="checkbox" @change="selectShop()" id="private" checked="checked" class="pp"><span></span>fk</label>
+              <img src="../../image/shop.png" >
+              <div class="right">
+                <p class="name">海俪恩：隐形眼镜润滑液 美瞳润眼液 水滋润10ml10片状 400</p>
+                <div class="rbottom">
+                  <span class="price">￥120 <s>28.00</s></span>
+                  <div class="btngroup">
+                    <span id="minus" class="minus" @click="minus(index)">-</span>
+                    <input type="number" id="coursenum" class="coursenum" onblur="inpBlur()">
+                    <span id="add" class="add" @click="plus(index)">+</span>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+        </ul>
+    <div class="fix_bottom">
+            <label><input type="checkbox" name="all" id="private" class="pp" v-model="isSelectAll" @change="selectAll()"><span></span>全选</label>
+
+            <div class="button" id="buy" tapmode @click.self="buy()" v-if="!isEdit">去结算</div>
+            <div class="total" id="total" v-if="!isEdit">合计：<span>￥{{totalPrice}}</span></div>
+            <div class="button" id="del" tapmode @click.self="detelSelect()" v-if="isEdit">删除</div>
+        </div>
+</div>
 </div>
 <ul class="footer">
     <li>
