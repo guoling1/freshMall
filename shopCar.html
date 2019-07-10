@@ -24,55 +24,62 @@
         <span>满99.00元包邮，享超值优惠</span>
         <span class="fr">去凑单</span>
     </div>
-        <ul>
-            <img v-if="shopList.length==0" src="../image/empty.png" alt="" style="display:block;width:30%;margin:2rem auto 0;">
-            <li v-for="(item,index) in shopList">
-                <label><input type="checkbox" @change="selectShop(index,item.product_id)" id="private" checked="checked" class="pp" v-model="item.is_check==1"><span></span>fk</label>
-                <img :src="item.image_default" >
-                <div class="right">
-                    <p class="name">{{item.name}}</p>
-                    <p>{{item.specs}}</p>
-                    <p v-if="item.type_id==68"><span v-if="item.right_eye_photometry">右眼光度：{{item.right_eye_photometry}}</span> <span v-if="item.left_eye_photometry">左眼光度：{{item.left_eye_photometry}}</span></p>
-                    <p @click="selectOpt(item.goods_id,item.id)" v-if="(item.type_id=='66'||item.type_id=='69')&&!item.refractionData" style="color:#ff4400;">选择验光单</p>
-                    <div v-if="(item.type_id=='66'||item.type_id=='69')&&item.refractionData" @click="selectOpt(item.goods_id,item.id)">
-                        <!-- 框架眼镜验光单信息-->
-                        <p class="opto"><span>右眼</span><span>光度：{{item.refractionData.right_luminosity}}</span><span>散光：{{item.refractionData.right_astigmatism}}</span><span>轴位：{{item.refractionData.right_axial_position}}</span></p>
-                        <p class="opto"><span>左眼</span><span>光度：{{item.refractionData.left_luminosity}}</span><span>散光：{{item.refractionData.left_astigmatism}}</span><span>轴位：{{item.refractionData.left_axial_position}}</span></p>
-                    </div>
-                    <div class="rbottom">
-                        <span class="price">￥{{item.price}} <s>{{item.mktprice}}</s></span>
-                        <div class="btngroup">
-                            <span id="minus" class="minus" @click="minus(index,item.id,item.product_id)">-</span>
-                            <input type="number" id="coursenum" class="coursenum" @blur="inpBlur(index,item.id,item.product_id)" v-model="item.num">
-                            <span id="add" class="add" @click="plus(index,item.id,item.product_id)">+</span>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!-- <li >
-              <label><input type="checkbox" @change="selectShop()" id="private" checked="checked" class="pp"><span></span>fk</label>
-              <img src="../../image/shop.png" >
-              <div class="right">
-                <p class="name">海俪恩：隐形眼镜润滑液 美瞳润眼液 水滋润10ml10片状 400</p>
+    <ul class="shop_list">
+        <li>
+            <label><input type="checkbox" checked="checked"><span></span></label>
+            <img src="images/shop.png">
+            <div class="right">
+                <p class="name">必品阁王饺子 白菜猪肉 490g/袋 限量发货 当天发货限量发货 当天发货限量发货 当天发货限量发货 当天发货</p>
                 <div class="rbottom">
-                  <span class="price">￥120 <s>28.00</s></span>
-                  <div class="btngroup">
-                    <span id="minus" class="minus" @click="minus(index)">-</span>
-                    <input type="number" id="coursenum" class="coursenum" onblur="inpBlur()">
-                    <span id="add" class="add" @click="plus(index)">+</span>
-                  </div>
+                    <span class="price">￥29.90 <s>36.00</s></span>
+                    <div class="btngroup">
+                        <span class="minus">-</span>
+                        <input type="number" class="coursenum" value="1">
+                        <span class="add">+</span>
+                    </div>
                 </div>
-              </div>
-            </li> -->
-        </ul>
+            </div>
+        </li>
+        <li>
+            <label><input type="checkbox" checked="checked"><span></span></label>
+            <img src="images/shop.png">
+            <div class="right">
+                <p class="name">必品阁王饺子 白菜猪肉 490g/袋 限量发货 当天发货限量发货 当天发货限量发货 当天发货限量发货 当天发货</p>
+                <div class="rbottom">
+                    <span class="price">￥29.90 <s>36.00</s></span>
+                    <div class="btngroup">
+                        <span class="minus">-</span>
+                        <input type="number" class="coursenum" value="1">
+                        <span class="add">+</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <label><input type="checkbox" checked="checked"><span></span></label>
+            <img src="images/shop.png">
+            <div class="right">
+                <p class="name">必品阁王饺子 白菜猪肉 490g/袋 限量发货 当天发货限量发货 当天发货限量发货 当天发货限量发货 当天发货</p>
+                <div class="rbottom">
+                    <span class="price">￥29.90 <s>36.00</s></span>
+                    <div class="btngroup">
+                        <span class="minus">-</span>
+                        <input type="number" class="coursenum" value="1">
+                        <span class="add">+</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
     <div class="fix_bottom">
-            <label><input type="checkbox" name="all" id="private" class="pp" v-model="isSelectAll" @change="selectAll()"><span></span>全选</label>
+        <label><input type="checkbox" name="all"><span></span>全选</label>
 
-            <div class="button" id="buy" tapmode @click.self="buy()" v-if="!isEdit">去结算</div>
-            <div class="total" id="total" v-if="!isEdit">合计：<span>￥{{totalPrice}}</span></div>
-            <div class="button" id="del" tapmode @click.self="detelSelect()" v-if="isEdit">删除</div>
+        <div class="total">
+            <p class="top">合计：￥108.5</p>
+            <p class="bottom">(包含快递费￥8.5)</p>
         </div>
-</div>
+        <div class="button">结算(3)</div>
+    </div>
 </div>
 <ul class="footer">
     <li>
@@ -109,111 +116,23 @@
 
 <script src="js/rem.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/swiper-4.3.3.min.js"></script>
 <script>
-
-    var mySwiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    })
-
-    /**
-     * 倒计时
-     * @param endTime 结束时间
-     */
-    function show_time(endTime) {
-        var time_start = new Date(); //设定当前时间
-        var e_time = endTime.replace(/-/g,"/");
-        var time_end = new Date(e_time).getTime(); //设定目标时间
-
-        // 计算时间差
-        var time_distance = time_end - time_start;
-
-        // 天
-        var int_day = Math.floor(time_distance / 86400000)
-        time_distance -= int_day * 86400000;
-
-        // 时
-        var int_hour = Math.floor(time_distance / 3600000)
-        time_distance -= int_hour * 3600000;
-
-        // 分
-        var int_minute = Math.floor(time_distance / 60000);
-        time_distance -= int_minute * 60000;
-
-        // 秒
-        var int_second = Math.floor(time_distance / 1000);
-
-        // 时分秒为单数时、前面加零
-        if (int_day < 10) {
-            int_day = "0" + int_day;
-        }
-
-        if (int_hour < 10) {
-            int_hour = "0" + int_hour;
-        }
-
-        if (int_minute < 10) {
-            int_minute = "0" + int_minute;
-        }
-
-        if (int_second < 10) {
-            int_second = "0" + int_second;
-        }
-
-
-        // 显示时间
-        $("#countdown").html(int_day + '天' + int_hour + ':' + int_minute + ':' + int_second);
-
-        // 设置定时器
-        setTimeout("show_time('"+e_time+"')", 1000);
-    }
-    show_time('2020-07-09 12:00:00')
-
     //加
-    $('.bottom .add').each(function (index, e) {
-        $(e).click(function () {
-            if ($(this).prev().val()) {
-                $(this).prev().val(Number($(this).prev().val()) + 1)
-            } else {
-                $(this).prev().val(1)
-                $(this).parent().addClass('isAdd')
-            }
-        })
+    $('.add').click(function () {
+        $(this).prev().val(Number($(this).prev().val()) + 1)
     })
     //减
-    $('.bottom .minus').each(function (index, e) {
-        $(e).click(function () {
-            if ($(this).next().val() != 1) {
-                $(this).next().val(Number($(this).next().val()) - 1)
-            } else {
-                $(this).next().val('');
-                $(this).parent().removeClass('isAdd')
-            }
-        })
+    $('.minus').click(function () {
+        if ($(this).next().val() > 1) {
+            $(this).next().val(Number($(this).next().val()) - 1)
+        }
     })
     //输入框
-    $('.bottom .num').each(function (index, e) {
-        $(e).bind('blur', function () {
-            if ($(this).val() < 1) {
-                $(this).val('');
-                $(this).parent().removeClass('isAdd')
-            }
-        })
+    $('.coursenum').bind('blur', function () {
+        if ($(this).val() < 1) {
+            $(this).val(1);
+        }
     })
-
-
-    $('.ad_close').click(function () {
-            $('.ad_mask').hide()
-
-    })
-
 </script>
 </body>
 </html>

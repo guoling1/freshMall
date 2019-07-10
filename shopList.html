@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生鲜系统</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/shopList.css">
+</head>
+<body>
+<div class="header">
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="images/back.png" alt="">
+    </a>
+    <div class="title">热销产品</div>
+    <div class="right"></div>
+</div>
+<div class="container">
+    <ul class="hot_shop_list">
+        <li class="clear">
+            <div class="shop_img">
+                <img src="images/shop.png" alt="">
+            </div>
+            <p class="name">西班牙进口公鸡牌意大利面螺丝形面螺丝形面螺丝形</p>
+            <div class="bottom">
+                <span class="price">￥19.80</span>
+                <div class="num_box fr isAdd">
+                    <span class="minus">-</span>
+                    <input type="number" class="num" value="1">
+                    <span class="add">+</span>
+                </div>
+            </div>
+        </li>
+        <li class="clear">
+            <div class="shop_img">
+                <img src="images/shop.png" alt="">
+            </div>
+            <p class="name">西班牙进口公鸡牌意</p>
+            <div class="bottom">
+                <span class="price">￥19.80</span>
+                <div class="num_box fr">
+                    <span class="minus">-</span>
+                    <input type="number" class="num">
+                    <span class="add">+</span>
+                </div>
+            </div>
+        </li>
+        <li class="clear">
+            <div class="shop_img">
+                <img src="images/shop.png" alt="">
+            </div>
+            <p class="name">西班牙进口公鸡牌意大利面螺丝形面螺丝形面螺丝形</p>
+            <div class="bottom">
+                <span class="price">￥19.80</span>
+                <div class="num_box fr isAdd">
+                    <span class="minus">-</span>
+                    <input type="number" class="num" value="1">
+                    <span class="add">+</span>
+                </div>
+            </div>
+        </li>
+        <li class="clear">
+            <div class="shop_img">
+                <img src="images/shop.png" alt="">
+            </div>
+            <p class="name">西班牙进口公鸡牌意大利面螺丝形面螺丝形面螺丝形</p>
+            <div class="bottom">
+                <span class="price">￥19.80</span>
+                <div class="num_box fr isAdd">
+                    <span class="minus">-</span>
+                    <input type="number" class="num" value="1">
+                    <span class="add">+</span>
+                </div>
+            </div>
+        </li>
+        <li class="clear">
+            <div class="shop_img">
+                <img src="images/shop.png" alt="">
+            </div>
+            <p class="name">西班牙进口公鸡牌意大利面螺丝形面螺丝形面螺丝形</p>
+            <div class="bottom">
+                <span class="price">￥19.80</span>
+                <div class="num_box fr isAdd">
+                    <span class="minus">-</span>
+                    <input type="number" class="num" value="1">
+                    <span class="add">+</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    //加
+    $('.bottom .add').each(function (index, e) {
+        $(e).click(function () {
+            if ($(this).prev().val()) {
+                $(this).prev().val(Number($(this).prev().val()) + 1)
+            } else {
+                $(this).prev().val(1)
+                $(this).parent().addClass('isAdd')
+            }
+        })
+    })
+    //减
+    $('.bottom .minus').each(function (index, e) {
+        $(e).click(function () {
+            if ($(this).next().val() != 1) {
+                $(this).next().val(Number($(this).next().val()) - 1)
+            } else {
+                $(this).next().val('');
+                $(this).parent().removeClass('isAdd')
+            }
+        })
+    })
+    //输入框
+    $('.bottom .num').each(function (index, e) {
+        $(e).bind('blur', function () {
+            if ($(this).val() < 1) {
+                $(this).val('');
+                $(this).parent().removeClass('isAdd')
+            }
+        })
+    })
+
+
+    $('.ad_close').click(function () {
+            $('.ad_mask').hide()
+
+    })
+
+</script>
+</body>
+</html>

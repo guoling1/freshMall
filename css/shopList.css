@@ -1,0 +1,69 @@
+.index{
+    padding-bottom: 0.98rem;
+}
+.num_box{
+    height: 0.35rem;
+    line-height: 0.35rem;
+    border-radius: 0.18rem;
+    border: 1px solid #33ca4e;
+    color: #33ca4e;
+    text-align: center;
+    font-size: 0;
+}
+.num_box span{
+    display: inline-block;
+    width: 0.35rem;
+    line-height: 0.35rem;
+    font-size: 0.32rem;
+}
+.num_box input{
+    width: 0.44rem;
+    height: 100%;
+    font-size: 0.24rem;
+    vertical-align: top;
+    text-align: center;
+}
+.num_box .minus,.num_box .num{
+    display: none;
+}
+.num_box.isAdd .minus,.num_box.isAdd .num{
+    display: inline-block;
+}
+.hot_shop_list{
+    padding-top: 0.26rem;
+    font-size: 0;
+}
+.hot_shop_list li{
+    position: relative;
+    display: inline-block;
+    padding: 0.00rem 0.18rem 0;
+    width: 3.37rem;
+    height: 4.13rem;
+    font-size: 0.24rem;
+    border: 0.01rem solid #f5f5f5;
+    vertical-align: top;
+}
+.hot_shop_list li .shop_img{
+    margin: 0.35rem auto 0.46rem;
+    width: 2.14rem;
+    height: 1.88rem;
+}
+.hot_shop_list li .name{
+    font-size: 0.24rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.hot_shop_list li .bottom{
+    position: absolute;
+    bottom: 0;
+    width: 3.37rem;
+}
+.hot_shop_list li .price{
+    font-size: 0.36rem;
+    font-weight: 900;
+    color: #ff0606;
+}
