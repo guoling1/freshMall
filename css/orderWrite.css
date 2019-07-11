@@ -80,8 +80,7 @@
 .price_box {
     padding: 0 0.3rem;
 }
-
-.fast_box .row:last-child, .price_box .row:last-child {
+.fast_box .row:last-child, .price_box .row:last-child,.order_det .row {
     border: none;
 }
 

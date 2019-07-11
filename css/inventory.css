@@ -1,0 +1,112 @@
+.container{
+    padding-bottom: 0.98rem;
+}
+.menu{
+    padding: 0 0.3rem;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    box-shadow: 0 10px 10px #fbfcff;
+    font-size: 0.28rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: auto;
+}
+.menu li{
+    display: inline-block;
+    width: 1.82rem;
+}
+.menu li:last-child{
+    width: auto;
+}
+.content{
+    padding: 0.38rem 0.3rem 0.6rem;
+}
+.shop_list_title{
+    line-height: 0.6rem;
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+.shop_list{
+    margin-bottom: 0.12rem;
+}
+.shop_list li{
+    border-bottom: 1px solid #ececec;
+}
+.shop_list li .left{
+    width: 1.64rem;
+    height: 1.64rem;
+}
+.shop_list li .right{
+    margin-left: 1.82rem;
+}
+.shop_list li .name{
+    padding: 0.15rem 0 0.14rem;
+    font-size: 0.32rem;
+    font-weight: 900;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.shop_list li .pay_num{
+    display: inline-block;
+    padding: 0 0.2rem;
+    height: 0.33rem;
+    line-height: 0.33rem;
+    font-size: 0.2rem;
+    color: #e79191;
+    border: 1px solid #e79191;
+    background: #fdf8f4;
+    border-radius: 1.6rem;
+}
+.shop_list li .price_box{
+    padding: 0.1rem 0.5rem 0.08rem 0;
+    font-size: 0.28rem;
+    color: #999;
+}
+.shop_list li .price_box .price{
+    font-size: 0.32rem;
+    font-weight: 900;
+    color: #ff0606;
+}
+
+.shop_list li .bottom{
+    height: 0.82rem;
+    line-height: 0.82rem;
+    border-top: 1px solid #ececec;
+}
+.shop_list li .bottom .specs{
+    font-size: 0.24rem;
+    font-weight: bold;
+}
+.shop_list li .price{
+
+}
+.num_box{
+    margin-top: 0.28rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    border-radius: 0.15rem;
+    border: 1px solid #33ca4e;
+    color: #33ca4e;
+    text-align: center;
+    font-size: 0;
+}
+.num_box span{
+    display: inline-block;
+    width: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.32rem;
+}
+.num_box input{
+    width: 0.44rem;
+    height: 100%;
+    font-size: 0.24rem;
+    vertical-align: top;
+    text-align: center;
+}
+.num_box .minus,.num_box .num{
+    display: none;
+}
+.num_box.isAdd .minus,.num_box.isAdd .num{
+    display: inline-block;
+}

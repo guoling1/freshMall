@@ -6,6 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/shopDetail.css">
 </head>
@@ -14,126 +15,89 @@
     <a href="javascript:history.go(-1)" class="left">
         <img src="images/back.png" alt="">
     </a>
-    <div class="title">热销产品</div>
+    <div class="title"></div>
     <div class="right"></div>
 </div>
 <div class="container">
-    <ul class="hot_shop_list">
-        <li class="clear">
-            <div class="shop_img">
-                <img src="images/shop.png" alt="">
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/sd_banner.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/sd_banner.png" alt=""></div>
             </div>
-            <p class="name">西班牙进口公鸡牌意大利面螺丝形面螺丝形面螺丝形</p>
-            <div class="bottom">
-                <span class="price">￥19.80</span>
-                <div class="num_box fr isAdd">
-                    <span class="minus">-</span>
-                    <input type="number" class="num" value="1">
-                    <span class="add">+</span>
-                </div>
+        </div>
+    </div>
+    <div class="base_info">
+        <p class="name">西班牙进口公鸡牌意大利面螺丝形面300g</p>
+        <div class="bottom clear">
+            <div class="left fl">
+                <span>￥29.9</span>
+                <s>￥99.9</s>
             </div>
-        </li>
-        <li class="clear">
-            <div class="shop_img">
-                <img src="images/shop.png" alt="">
-            </div>
-            <p class="name">西班牙进口公鸡牌意</p>
-            <div class="bottom">
-                <span class="price">￥19.80</span>
-                <div class="num_box fr">
-                    <span class="minus">-</span>
-                    <input type="number" class="num">
-                    <span class="add">+</span>
-                </div>
-            </div>
-        </li>
-        <li class="clear">
-            <div class="shop_img">
-                <img src="images/shop.png" alt="">
-            </div>
-            <p class="name">西班牙进口公鸡牌意大利面螺丝形面螺丝形面螺丝形</p>
-            <div class="bottom">
-                <span class="price">￥19.80</span>
-                <div class="num_box fr isAdd">
-                    <span class="minus">-</span>
-                    <input type="number" class="num" value="1">
-                    <span class="add">+</span>
-                </div>
-            </div>
-        </li>
-        <li class="clear">
-            <div class="shop_img">
-                <img src="images/shop.png" alt="">
-            </div>
-            <p class="name">西班牙进口公鸡牌意大利面螺丝形面螺丝形面螺丝形</p>
-            <div class="bottom">
-                <span class="price">￥19.80</span>
-                <div class="num_box fr isAdd">
-                    <span class="minus">-</span>
-                    <input type="number" class="num" value="1">
-                    <span class="add">+</span>
-                </div>
-            </div>
-        </li>
-        <li class="clear">
-            <div class="shop_img">
-                <img src="images/shop.png" alt="">
-            </div>
-            <p class="name">西班牙进口公鸡牌意大利面螺丝形面螺丝形面螺丝形</p>
-            <div class="bottom">
-                <span class="price">￥19.80</span>
-                <div class="num_box fr isAdd">
-                    <span class="minus">-</span>
-                    <input type="number" class="num" value="1">
-                    <span class="add">+</span>
-                </div>
-            </div>
-        </li>
-    </ul>
+            <div class="right fr">23.8w+人购买</div>
+        </div>
+    </div>
+    <div class="session">
+        <div class="title">请选择规格</div>
+        <ul class="specs">
+           <li class="active">每袋（1kg）￥29.90/袋； ￥29.90</li>
+           <li>每箱（10袋*1kg）|￥29.90/袋；￥299.00</li>
+        </ul>
+        <div class="activity">
+            <span class="name">活动</span>
+            <span>购买符合条件的商品99.00元，即可获得满减30优惠。</span>
+        </div>
+    </div>
 
+    <div class="session">
+        <div class="title">服务保障</div>
+        <ul class="ensure">
+            <li>
+                <p class="name">配送服务</p>
+                <p>该商品支持次日达，有平台配送</p>
+            </li>
+            <li>
+                <p class="name">售后服务</p>
+                <p>该商品支持签收起72小时内有质量问题可退</p>
+            </li>
+            <li>
+                <p class="name">支付方式</p>
+                <p>在线支付：支付宝、微信、余额</p>
+                <p>货到付款：现金、支付宝、微信、银行卡</p>
+            </li>
+        </ul>
+    </div>
+    <div class="session">
+        <div class="title">详细信息</div>
+        <div class="detail">
+
+        </div>
+    </div>
+
+    <div class="fix_bottom clear">
+        <div class="addCar fl">加入购物车</div>
+        <div class="addList fr">
+            <img src="images/add_list.png" alt="">
+            <p>加常用收藏</p>
+        </div>
+    </div>
 </div>
 
 <script src="js/rem.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
 <script>
-    //加
-    $('.bottom .add').each(function (index, e) {
-        $(e).click(function () {
-            if ($(this).prev().val()) {
-                $(this).prev().val(Number($(this).prev().val()) + 1)
-            } else {
-                $(this).prev().val(1)
-                $(this).parent().addClass('isAdd')
-            }
-        })
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        }
     })
-    //减
-    $('.bottom .minus').each(function (index, e) {
-        $(e).click(function () {
-            if ($(this).next().val() != 1) {
-                $(this).next().val(Number($(this).next().val()) - 1)
-            } else {
-                $(this).next().val('');
-                $(this).parent().removeClass('isAdd')
-            }
-        })
+    $('.specs li').click(function () {
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active')
     })
-    //输入框
-    $('.bottom .num').each(function (index, e) {
-        $(e).bind('blur', function () {
-            if ($(this).val() < 1) {
-                $(this).val('');
-                $(this).parent().removeClass('isAdd')
-            }
-        })
-    })
-
-
-    $('.ad_close').click(function () {
-            $('.ad_mask').hide()
-
-    })
-
 </script>
 </body>
 </html>

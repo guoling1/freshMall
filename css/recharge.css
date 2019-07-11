@@ -1,0 +1,132 @@
+.recharge{
+    padding: 0.31rem 0.14rem 0;
+    font-size: 0;
+}
+.recharge li{
+    font-size: 0.24rem;
+    padding: 1px;
+    margin: 0 0.14rem 0.31rem;
+    display: inline-block;
+    width: 3.22rem;
+    height: 1.42rem;
+    color: #333;
+    border: 1px solid #999;
+    border-radius: 0.22rem;
+    text-align: center;
+}
+.recharge li.active{
+    padding: 0;
+    border: 2px solid #000;
+}
+.recharge li .price{
+    margin: 0.24rem 0 0;
+    font-size: 0.34rem;
+    font-weight: bold;
+    color: #ff0606;
+}
+.pay_type{
+    padding: 0 0.3rem;
+    border-top: 0.2rem solid #f6f6f6;
+}
+
+.pay_type .type_title {
+    margin-top: 0.3rem;
+    height: 0.52rem;
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+
+.pay_type ul li {
+    padding: 0.23rem 0;
+    height: 0.74rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.pay_type ul li img {
+    display: inline-block;
+    margin: 0 0.25rem 0 0.2rem;
+    width: 0.74rem;
+    height: 0.74rem;
+}
+.pay_type ul li .name{
+    display: inline-block;
+    line-height: 0.74rem;
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+
+.pay_type ul li .middle {
+    display: inline-block;
+    font-size: 0.2rem;
+    color: #999;
+}
+
+.pay_type ul li .middle .title {
+    margin-bottom: 0.09rem;
+    color: #333;
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+
+.pay_type ul li .right {
+    float: right;
+    margin: 0.2rem 0 0;
+}
+
+.submit {
+    margin: 1rem 13% 1rem;
+    width: 74%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #25c642;
+    border-radius: 0.4rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+label {
+    display: inline-block;
+    position: relative;
+    width: 0.3rem;
+    height: 0.3rem;
+    /*color: #ffffff;*/
+}
+label input {
+    display: none;
+}
+label span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.28rem;
+    height: 0.28rem;
+    margin: auto;
+    border: 0.02rem solid #a2a2a2;
+    border-radius: 50%;
+}
+label span:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin: auto;
+    border-radius: 100%;
+    background: url("../images/success.png") no-repeat;
+    background-size: 100%;
+    transform: scale(0);
+    transition: all.3s;
+}
+label input:checked + span {
+    border: none;
+    background: #fff;
+}
+label input:checked + span:after {
+    content: '';
+    transform: scale(1);
+}

@@ -1,0 +1,87 @@
+body{
+    background: #f2f3f5;
+}
+.fix_top{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 10px #e4e7ea;
+    line-height: 0.84rem;
+    background: #fff;
+}
+.fix_top p{
+    display: inline-block;
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+.fix_top p.active{
+    color: #25c642;
+    border-bottom: 0.06rem solid #25c642;
+}
+ul{
+    margin-top: 1.14rem;
+}
+ul li{
+    margin-bottom: 0.3rem;
+    padding: 0 0.3rem;
+    background: #fff;
+}
+ul li .top{
+    line-height: 0.54rem;
+    font-weight: bold;
+}
+ul li .top .status{
+    color: #e4373b;
+}
+ul li .middle{
+    padding: 0.2rem 0 0;
+    border-top: 1px solid #f2f3f5;
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+ul li .middle .right{
+    position: relative;
+}
+ul li .middle .avatar{
+    width: 1.74rem;
+    height: 1.74rem;
+}
+ul li .middle .name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    line-height: 0.6rem;
+}
+ul li .middle .price{
+    color: #ff0606;
+}
+ul li .bottom{
+    text-align: right;
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #333;
+}
+
+ul li .button_group{
+    padding: 0.24rem 0;
+    border-top: 1px solid #f2f3f5;
+}
+ul li .button_group div{
+    display: inline-block;
+    font-size: 0.28rem;
+    color: #999;
+    width: 1.86rem;
+    line-height: 0.48rem;
+    border-radius: 0.24rem;
+    text-align: center;
+    border: 1px solid #999;
+}
+ul li .button_group div.pay{
+    margin-left: 0.2rem;
+    color: #fff;
+    background: #25c642;
+    border-color: #25c642;
+}

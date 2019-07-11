@@ -1,0 +1,121 @@
+body{
+    background: #f4f4f4;
+}
+.coupon {
+    padding: 1.68rem 0 0;
+    height: calc(100% - 1.68rem);
+    background: #f4f4f4;
+    font-size: 0.24rem;
+    text-align: center;
+}
+.coupon .tab {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0.88rem;
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #fff;
+    box-shadow: 0 2px 20px #ebebeb;
+    font-size: 0.28rem;
+    color: #666;
+    z-index: 1;
+}
+.coupon .tab div {
+    width: 45%;
+}
+.coupon .tab .active {
+    color: #8ec31f;
+    font-weight: bold;
+}
+.coupon .coupons {
+    padding: 0.3rem;
+    font-size: 0;
+}
+.coupon .coupons li {
+    margin-bottom: 0.3rem;
+    height: 2.2rem;
+}
+.coupon .coupons li .left {
+    display: inline-block;
+    width: 2.25rem;
+    background: #6e9d03;
+    font-size: 0.32rem;
+    font-weight: 900;
+    height: 100%;
+    vertical-align: text-bottom;
+    color: #fff;
+    line-height: 2.2rem;
+    border-top-left-radius: 0.16rem;
+    border-bottom-left-radius: 0.16rem;
+}
+.coupon .coupons li .left span {
+    font-size: 0.7rem;
+}
+.coupon .coupons li .middle {
+    display: inline-block;
+    width: 0.32rem;
+    height: 100%;
+    background: url("../images/coupon.png") no-repeat;
+    background-size: 100% 100%;
+}
+.coupon .coupons li .right p{
+    white-space: nowrap;
+
+}
+.coupon .coupons li .right {
+    position: relative;
+    display: inline-block;
+    width: 4.15rem;
+    height: 100%;
+    background: #fff;
+    font-size: 0.24rem;
+    vertical-align: text-bottom;
+    text-align: left;
+}
+.coupon .coupons li .right .title {
+    margin: 0.3rem 0 0.2rem;
+    font-size: 0.42rem;
+    font-weight: bold;
+    color: #333;
+}
+.coupon .coupons li .right .explain {
+    margin-top: 0.2rem;
+    color: #999;
+}
+.coupon .coupons li .right img {
+    position: absolute;
+    right: 0.1rem;
+    top: 0.28rem;
+    width: 1.65rem;
+    height: 1.65rem;
+}
+.coupon .coupons li .rr {
+    display: inline-block;
+    width: 0.15rem;
+    height: 100%;
+    background: url("../images/couponR.png") no-repeat;
+    background-size: 100% 100%;
+}
+.coupon .coupons li .right .add{
+    position: absolute;
+    width: 0.3rem;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-left: 1px solid #6e9d03;
+    color: #6e9d03;
+    line-height: 1rem;
+    padding: 0 0.1rem;
+}
+.coupon .coupons li.lose .left {
+    background: #dad8d9;
+}
+.coupon .coupons li.lose .middle {
+    background: url("../images/couponNo.png") no-repeat;
+    background-size: 100% 100%;
+}
+.coupon .coupons li.lose .right p {
+    color: #999;
+}

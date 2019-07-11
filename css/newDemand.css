@@ -1,0 +1,47 @@
+form{
+    padding: 0.46rem 0.3rem;
+}
+form .inp{
+    width: 100% ;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    font-size: 0.32rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+form .inp input{
+    display: inline-block;
+    width: 100%;
+}
+form .picture{
+    margin-bottom: 0.28rem;
+}
+form .picture .title{
+    margin-bottom: 0.1rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    line-height: 0.7rem;
+}
+form .picture .upload{
+    margin-bottom: 0.48rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url("../images/addImg.png") no-repeat;
+    background-size: 100% 100%;
+}
+form .picture .upload input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.submit{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: #25c642;
+}

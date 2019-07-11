@@ -1,69 +1,120 @@
-.index{
-    padding-bottom: 0.98rem;
+.header{
+    background: transparent;
 }
-.num_box{
-    height: 0.35rem;
-    line-height: 0.35rem;
-    border-radius: 0.18rem;
-    border: 1px solid #33ca4e;
-    color: #33ca4e;
-    text-align: center;
-    font-size: 0;
+.container{
+    padding: 0 0 1rem;
 }
-.num_box span{
-    display: inline-block;
-    width: 0.35rem;
-    line-height: 0.35rem;
-    font-size: 0.32rem;
-}
-.num_box input{
-    width: 0.44rem;
-    height: 100%;
-    font-size: 0.24rem;
-    vertical-align: top;
-    text-align: center;
-}
-.num_box .minus,.num_box .num{
-    display: none;
-}
-.num_box.isAdd .minus,.num_box.isAdd .num{
-    display: inline-block;
-}
-.hot_shop_list{
-    padding-top: 0.26rem;
-    font-size: 0;
-}
-.hot_shop_list li{
+.base_info{
+    z-index: 11;
     position: relative;
-    display: inline-block;
-    padding: 0.00rem 0.18rem 0;
-    width: 3.37rem;
-    height: 4.13rem;
-    font-size: 0.24rem;
-    border: 0.01rem solid #f5f5f5;
-    vertical-align: top;
+    top: -0.38rem;
+    left: 0.2rem;
+    padding: 0 0.1rem;
+    width: 6.9rem;
+    background: #fff;
+    border-radius: 0.2rem;
 }
-.hot_shop_list li .shop_img{
-    margin: 0.35rem auto 0.46rem;
-    width: 2.14rem;
-    height: 1.88rem;
+.base_info .name{
+    padding: 0.3rem 0 0.22rem;
+    margin: 0 auto;
+    width: 4.7rem;
+    line-height: 0.7rem;
+    font-size: 0.32rem;
+    font-weight: 900;
+    text-align: center;
 }
-.hot_shop_list li .name{
-    font-size: 0.24rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
+.base_info .bottom .left{
+    font-weight: bold;
+    color: #999;
 }
-.hot_shop_list li .bottom{
-    position: absolute;
-    bottom: 0;
-    width: 3.37rem;
-}
-.hot_shop_list li .price{
+.base_info .bottom .left span{
     font-size: 0.36rem;
     font-weight: 900;
-    color: #ff0606;
+    color: #f8421d;
+}
+.base_info .bottom .right{
+    padding: 0 0.2rem;
+    line-height: 0.33rem;
+    font-size: 0.2rem;
+    color: #e79191;
+    border: 1px solid #e79191;
+    border-radius: 0.165rem;
+    background: #fdf8f4;
+}
+.session{
+    padding: 0.14rem 0.3rem 0.38rem;
+    border-top: 0.2rem solid #f6f6f6;
+}
+.session .title{
+    font-size: 0.32rem;
+    font-weight: 900;
+    line-height: 0.7rem;
+}
+.session .specs li{
+    display: inline-block;
+    margin: 0.18rem 0.18rem 0.18rem 0;
+    padding: 0 0.18rem 0 0.22rem;
+    font-weight: bold;
+    line-height: 0.5rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 0.25rem;
+}
+.session .specs li.active{
+    background: #25c642;
+    color: #fff;
+    border-color: #25c642;
+}
+.session .activity{
+
+}
+.session .activity span{
+    color: #999;
+    font-weight: bold;
+}
+
+.session .activity .name{
+    padding: 0 0.04rem;
+    line-height: 0.3rem;
+    font-weight: inherit;
+    color: #e5721f;
+    border: 1px solid #e5721f;
+    border-radius: 0.04rem;
+}
+.session .ensure{
+    line-height: 0.6rem;
+    font-weight: 900;
+    color: #999;
+}
+.session .ensure .name{
+    line-height: 0.6rem;
+    color: #e5721f;
+}
+
+.fix_bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    color: #fff;
+    background: #25c642;
+    text-align: center;
+}
+.fix_bottom .addCar{
+    height: 100%;
+    width: 5.53rem;
+    line-height: 0.98rem;
+    display: inline-block;
+    font-size: 0.32rem;
+    font-weight: bold;
+}
+.fix_bottom .addList{
+    width: 1.97rem;
+    height: 100%;
+    background: #333;
+    font-size: .2rem;
+}
+.fix_bottom .addList img{
+    margin: 0.15rem auto 0.04rem;
+    width: 0.45rem;
+    height: 0.45rem;
 }
